@@ -1,0 +1,52 @@
+{
+  "_docs": "Full parameter guide: see CONFIG.md",
+
+  "strategy": {
+    "min_price": 0.75,
+    "max_price": 0.88,
+    "min_elapsed_sec": 530,
+    "min_deviation_pct": 3,
+    "max_deviation_pct": 100,
+    "no_entry_before_end_sec": 335,
+    "momentum_window_sec": 60,
+    "vwap_window_sec": 30,
+    "win_rate_csv": "data/win_rate.csv"
+  },
+
+  "entry": {
+    "bet_amount_usd": 5,
+    "price_offset": 0.02,
+    "order_type": "FAK",
+    "max_retries": 3,
+    "retry_delay_ms": 300,
+    "fill_timeout_ms": 1000,
+    "min_contracts": 5,
+    "min_order_usd": 1,
+    "max_entry_price": 0.88,
+    "ws_recovery_timeout_sec": 10
+  },
+
+  "hedge": {
+    "enabled": false,
+    "hedge_price": 0.02,
+    "order_type": "GTD",
+    "max_retries": 3,
+    "retry_delay_ms": 1000
+  },
+
+  "redeem": {
+    "enabled": true,
+    "interval_seconds": 180,
+    "auto_confirm": true
+  },
+
+  "telegram": {
+    "enabled": false,
+    "chart_every_n_trades": 5
+  },
+
+  "logging": {
+    "level": "INFO",
+    "file_rotation_hours": 3
+  }
+}
