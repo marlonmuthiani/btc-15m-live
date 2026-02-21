@@ -28,7 +28,7 @@ The bot identifies the "favorite" (the token with higher probability), waits for
 ## Project Structure
 
 ```
-btc_15m_live/
+btc-15m-live/
 |-- main.py                 # Main bot: dashboard, signals, execution, all core logic
 |-- config.json             # Trading parameters (strategy, entry, hedge, etc.)
 |-- .env.example            # Environment variables template (copy to .env)
@@ -71,8 +71,8 @@ python3 --version
 
 ```bash
 cd ~
-git clone https://github.com/YOUR_USERNAME/btc_15m_live.git
-cd btc_15m_live
+git clone https://github.com/txbabaxyz/btc-15m-live.git
+cd btc-15m-live
 ```
 
 ### Step 3: Create Virtual Environment
